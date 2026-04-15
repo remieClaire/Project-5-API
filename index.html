@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pokemon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Script for javascript -->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <section class="text-box">
+                <p>Wild     appeared!</p>
+            </section>
+            <section class="sprites">
+                <div class="pokeballBar">
+                    <img src="images/pokeballSprite.jpeg" alt="pokeball counter sprite">
+                </div>
+                <div class="playerSprite">
+                    <img src="images/playerSprite.jpeg" alt="pokemon player sprite facing away">
+                </div>
+            </section>
+            <section class="user-input">
+                <div class="input-form">
+                    <input type="text" id="pokemonName" placeholder="Enter a pokemon">
+                    <button onclick="fetchData()">Fetch pokemon</button><br>
+                </div>
+                <div class="img-result">
+                    <img src="" alt="Pokemon sprite" id="pokemonSprite" style="display:none">
+                </div>
+            </section>
+        </div>
+        
+
+        
+    </body>
+
+</html>
