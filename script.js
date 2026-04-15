@@ -13,14 +13,21 @@ async function fetchData() {
         const data = await response.json();
         console.log(data);
         
+        /*------------- pokemon sprite -------------*/
         // get sprite
         const pokemonSprite = data.sprites.front_default;
         const imgElement = document.getElementById("pokemonSprite");
 
-        // load berry sprite into source
+        // load sprite into source
         imgElement.src = pokemonSprite;
         // change image style to block
         imgElement.style.display = "block";
+
+        /*------------- pokemon name -------------*/
+        const pokemonTextName = data.name;
+        const pokemonNameElement = document.getElementById("pokemonTextName");
+
+        pokemonNameElement.innerText = `Wild ${pokemonTextName.toUpperCase()} appeared!`;
         
     }
     catch (error) {

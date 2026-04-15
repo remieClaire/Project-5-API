@@ -1,12 +1,19 @@
+body {
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+
 .wrapper {
     max-width: 350px;
     min-height: 100%;
+
+    padding: 10px;
 
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
 
     background-color: #f8f8f8;
+    border: double black;
 }
 
 .user-input {
