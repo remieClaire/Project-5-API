@@ -1,19 +1,30 @@
 body {
+    display: grid;
+    justify-content: center;
     max-width: 1080px;
+
+    background-color: #01AEF0;
 }
 
 img, input {
     max-width: 216px;
     max-height: 128px;
 
+    margin-bottom: 10px;
 }
 
+.header {
+    justify-self: center;
 
-
+}
 /* each row of movies should be in flexbox row layout */
 .row {
     display: flex;
     flex-direction: row;
 
-    background-color: aliceblue;
+    gap: 10px;
+}
+
+.title {
+    background-color: aqua;
 }
