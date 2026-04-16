@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Pokemon</title>
+        <title>Studio Ghibli</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Link to CSS -->
         <link rel="stylesheet" href="styles.css">
@@ -10,31 +10,195 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="wrapper">
-            <section class="text-box">
-                <p id="pokemonTextName"></p>
-            </section>
-            <section class="sprites">
-                <div class="pokeballBar">
-                    <img src="images/pokeballSprite.jpeg" alt="pokeball counter sprite">
-                </div>
-                <div class="playerSprite">
-                    <img src="images/playerSprite.jpeg" alt="pokemon player sprite facing away">
-                </div>
-            </section>
-            <section class="user-input">
-                <div class="input-form">
-                    <input type="text" id="pokemonName" placeholder="Enter a pokemon">
-                    <button onclick="fetchData()">Fetch pokemon</button><br>
-                </div>
-                <div class="img-result">
-                    <img src="" alt="Pokemon sprite" id="pokemonSprite" style="display:none">
-                </div>
-            </section>
+        <div class="movie-wrapper">
+            <div class="row">
+                <section class="title">
+                    <img src="images/ghibliLogo.jpeg" alt="Studio Ghibli logo">
+                </section>
+                <section class="nausicaa">
+                    <!-- button in form of img s-->
+                    <input 
+                        id="nausicaa-img"
+                        type="image" 
+                        alt="movie poster Nausicaa of the Valley of the Wind"
+                        src=""
+                        style="display: none;">
+                </section>
+                <section class="castle">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Castle in the Sky"
+                        src="">
+                </section>
+                <section class="grave">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Grave of the Fireflies"
+                        src="">
+                </section>
+                <section class="totoro">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster My Neighbor Totoro"
+                        src="">
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="kiki">
+                <!-- button in form of img -->
+                <input 
+                    type="image" 
+                    alt="movie poster Kiki's Delivery Service"
+                    src="">
+                </section>
+                <section class="yesterday">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Only Yesterday"
+                        src="">
+                </section>
+                <section class="porco">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Porco Rosso"
+                        src="">
+                </section>
+                <section class="ocean">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Ocean Waves"
+                        src="">
+                </section>
+                <section class="pom">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Pom Poko"
+                        src="">
+                </section>
+            </div>  
+            
+            <div class="row">
+                <section class="whisper">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Whisper of the Heart"
+                        src="">
+                </section>
+                <section class="mononoke">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Princess Mononoke"
+                        src="">
+                </section>
+                <section class="yamada">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster My Neighbors the Yamadas"
+                        src="">
+                </section>
+                <section class="spirited">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Spirited Away"
+                        src="">
+                </section>
+                <section class="cat">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster The Cat Returns"
+                        src="">
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="howl">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Howl's Moving Castle"
+                        src="">
+                </section>
+                <section class="earthsea">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Tales from Earthsea"
+                        src="">
+                </section>
+                <section class="ponyo">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Ponyo"
+                        src="">
+                </section>
+                <section class="arrietty">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster Arrietty"
+                        src="">
+                </section>
+                <section class="poppy hill">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster From Up on Poppy Hill"
+                        src="">
+                </section>
+            </div>
+            
+            <div class="row">
+                <section class="wind">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster The Wind Rises"
+                        src="">
+                </section>
+                <section class="kaguya">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster The Tale of the Princess Kaguya"
+                        src="">
+                </section>
+                <section class="marnie">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster When Marnie Was There"
+                        src="">
+                </section>
+                <section class="red turtle">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster The Red Turtle"
+                        src="">
+                </section>
+                <section class="heron">
+                    <!-- button in form of img -->
+                    <input 
+                        type="image" 
+                        alt="movie poster The Boy and the Heron"
+                        src="">
+                </section>
+            </div>
         </div>
-        
 
-        
     </body>
-
 </html>

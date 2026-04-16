@@ -1,36 +1,62 @@
+const API_URL = `https://ghibliapi.dev/films`;
 
-async function fetchData() {
+async function fetchImg() {
     try {
-        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
-        
-        const POKEMON_URL = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
-        const response = await fetch(POKEMON_URL);
+        const response = await fetch(API_URL);
 
         if (!response.ok) {
-            throw new Error("Could not fetch resource");
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
         const data = await response.json();
-        console.log(data);
-        
-        /*------------- pokemon sprite -------------*/
-        // get sprite
-        const pokemonSprite = data.sprites.front_default;
-        const imgElement = document.getElementById("pokemonSprite");
 
-        // load sprite into source
-        imgElement.src = pokemonSprite;
-        // change image style to block
-        imgElement.style.display = "block";
+        //using foreach, parse through data and grab images
 
-        /*------------- pokemon name -------------*/
-        const pokemonTextName = data.name;
-        const pokemonNameElement = document.getElementById("pokemonTextName");
 
-        pokemonNameElement.innerText = `Wild ${pokemonTextName.toUpperCase()} appeared!`;
-        
     }
     catch (error) {
-        console.error(error);
+        console.error("Error:", error.message);
+    }
+    
+
+
+
+    var idArr = [];
+}
+
+async function fetchData() {
+    /* ----------- variables ----------- */
+    //setting URL source
+    const URL = `https://ghibliapi.dev/films/86e544fd-79de-4e04-be62-5be67d8dd92e`;
+
+    try {
+        
+        //getting response from URL
+        const response = await fetch(URL);
+        
+        console.log("Status:", response.status);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        //get data from json file response
+        const data = await response.json();
+        console.log(data);
+
+        //get image 
+        const nausicaaPoster = data.image;
+        //get movie slot element
+        const nausicaaElement = document.getElementById("nausicaa-img");
+
+        //set image
+        nausicaaElement.src = nausicaaPoster;
+        nausicaaElement.style.display = "block";
+
+    }
+    catch (error) {
+        console.error("Error:", error.message);
     }
 }
+
+fetchData();
