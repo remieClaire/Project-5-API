@@ -7,9 +7,16 @@
         <!-- Link to CSS -->
         <link rel="stylesheet" href="styles.css">
         <!-- Script for javascript -->
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
+        <dialog id="dialog" style="background-image: url('');">
+            <div class="dialog-wrapper">
+                <h2>Placeholder title</h2>
+                <p>Lorem ipsum placeholder placeholder</p>
+            </div>
+            
+        </dialog>
         <div class="movie-wrapper">
             <section class="header">
                 <img src="images/ghibliLogo.jpeg" alt="Studio Ghibli logo">
@@ -21,6 +28,7 @@
                         id="nausicaa-img"
                         type="image" 
                         alt="movie poster Nausicaa of the Valley of the Wind"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="castle">
@@ -29,6 +37,7 @@
                         id="castle-img"
                         type="image" 
                         alt="movie poster Castle in the Sky"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="grave">
@@ -37,6 +46,7 @@
                         id="grave-img"
                         type="image" 
                         alt="movie poster Grave of the Fireflies"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="totoro">
@@ -45,6 +55,7 @@
                         id="totoro-img"
                         type="image" 
                         alt="movie poster My Neighbor Totoro"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="kiki">
@@ -53,6 +64,7 @@
                     id="kiki-img"
                     type="image" 
                     alt="movie poster Kiki's Delivery Service"
+                    onclick="showMovieDetails()"
                     src="">
                 </section>
             </div>
@@ -64,6 +76,7 @@
                         id="yesterday-img"
                         type="image" 
                         alt="movie poster Only Yesterday"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="porco">
@@ -72,6 +85,7 @@
                         id="porco-img"
                         type="image" 
                         alt="movie poster Porco Rosso"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="ocean">
@@ -80,6 +94,7 @@
                         id="ocean-img"
                         type="image" 
                         alt="movie poster Ocean Waves"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="pom">
@@ -88,6 +103,7 @@
                         id="pom-img"
                         type="image" 
                         alt="movie poster Pom Poko"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="whisper">
@@ -96,6 +112,7 @@
                         id="whisper-img"
                         type="image" 
                         alt="movie poster Whisper of the Heart"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
             </div>  
@@ -107,6 +124,7 @@
                         id="mononoke-img"
                         type="image" 
                         alt="movie poster Princess Mononoke"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="yamada">
@@ -115,6 +133,7 @@
                         id="yamada-img"
                         type="image" 
                         alt="movie poster My Neighbors the Yamadas"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="spirited">
@@ -123,6 +142,7 @@
                         id="spirited-img"
                         type="image" 
                         alt="movie poster Spirited Away"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="cat">
@@ -131,6 +151,7 @@
                         id="cat-img"
                         type="image" 
                         alt="movie poster The Cat Returns"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="howl">
@@ -139,6 +160,7 @@
                         id="howl-img"
                         type="image" 
                         alt="movie poster Howl's Moving Castle"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
             </div>
@@ -150,6 +172,7 @@
                         id="earthsea-img"
                         type="image" 
                         alt="movie poster Tales from Earthsea"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="ponyo">
@@ -158,6 +181,7 @@
                         id="ponyo-img"
                         type="image" 
                         alt="movie poster Ponyo"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="arrietty">
@@ -166,6 +190,7 @@
                         id="arrietty-img"
                         type="image" 
                         alt="movie poster Arrietty"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="poppy hill">
@@ -174,6 +199,7 @@
                         id="poppy hill-img"
                         type="image" 
                         alt="movie poster From Up on Poppy Hill"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="wind">
@@ -182,6 +208,7 @@
                         id="wind-img"
                         type="image" 
                         alt="movie poster The Wind Rises"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
             </div>
@@ -194,6 +221,7 @@
                         id="kaguya-img"
                         type="image" 
                         alt="movie poster The Tale of the Princess Kaguya"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="marnie">
@@ -202,6 +230,7 @@
                         id="marnie-img"
                         type="image" 
                         alt="movie poster When Marnie Was There"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="red turtle">
@@ -210,6 +239,7 @@
                         id="red turtle-img"
                         type="image" 
                         alt="movie poster The Red Turtle"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="earwig">
@@ -218,6 +248,7 @@
                         id="earwig-img"
                         type="image" 
                         alt="movie poster Earwig and the Witch"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
                 <section class="heron">
@@ -226,10 +257,12 @@
                         id="heron-img"
                         type="image" 
                         alt="movie poster The Boy and the Heron"
+                        onclick="showMovieDetails()"
                         src="">
                 </section>
             </div>
         </div>
-
+    
     </body>
+
 </html>

@@ -1,9 +1,12 @@
 body {
     display: grid;
     justify-content: center;
-    max-width: 1080px;
+    max-width: 1024px;
 
     background-color: #01AEF0;
+
+    /* used for centering content on a page */
+    margin: 0 auto;
 }
 
 img, input {
@@ -15,7 +18,6 @@ img, input {
 
 .header {
     justify-self: center;
-
 }
 /* each row of movies should be in flexbox row layout */
 .row {
