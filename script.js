@@ -47,9 +47,33 @@ async function fetchDetails(input) {
 
         const data = await response.json();
         
+        //json data 
         const banner = data[elementIndex].movie_banner;
 
+        const title = data[elementIndex].title;
+        const ogTitle = data[elementIndex].original_title;
+        const romaTitle = data[elementIndex].original_title_romanised;
+        const date = data[elementIndex].release_date;
+        const runTime = data[elementIndex].running_time;
+        const director = data[elementIndex].director;
+        const desc = data[elementIndex].description;
+
+        //html elements
+        const movieTitle = document.getElementById("movie-title");
+        const romaMovieTitle = document.getElementById("roma-movie-title");
+        const timeDetails = document.getElementById("time-details");
+        const ghibliDirector = document.getElementById("ghibli-director");
+        const description = document.getElementById("description");
+
+        movieTitle.textContent = title;
+        romaMovieTitle.textContent = `${ogTitle} (${romaTitle})`;
+        timeDetails.textContent = `${date} | ${runTime}m`;
+        ghibliDirector.textContent = `${director}`;
+        description.textContent = `${desc}`;
+
+        
         dialog.style.backgroundImage = `url('${banner}')`;
+
     }
     catch (error) {
         console.error("Error:", error.message);
