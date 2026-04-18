@@ -12,10 +12,14 @@ body {
 img, input {
     max-width: 216px;
     max-height: 128px;
-
+    
     margin-bottom: 10px;
 
     opacity: 0;
+}
+
+input {
+    pointer-events: auto;
 }
 
 .header {
@@ -24,15 +28,18 @@ img, input {
 
 dialog {
     max-width: 600px;
-    min-width: 300px;
+    
     max-height: 300px;
 
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    border: thick solid black;
+
 }
 .dialog-text {
     background-color:mintcream;
@@ -48,4 +55,33 @@ dialog {
     flex-direction: row;
 
     gap: 10px;
+}
+
+/* Responsive CSS styles */
+
+/* media query will run only if viewport width is equal to or less than 600px */
+/* for mobile */
+@media screen and (max-width: 450px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    img, input {
+        /* image stretches according to height */
+        max-height: 300px;
+        
+        /* width of image should always be 100% of parent */
+        width: 100%;
+        /* image should fit so that its always visible and proportionate */
+        object-fit: cover;
+    }
+
+    dialog {
+        max-width: 330px;
+        max-height: 400px;
+
+        width: 100%;
+    }
+
 }

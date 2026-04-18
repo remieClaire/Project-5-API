@@ -24,7 +24,6 @@ function registerInput() {
         });
         //register animations when hovered over
         input.addEventListener('mouseenter', (e) => {
-            console.log(e.target.id);
             anime({
                 targets: `#${e.target.id}`,
                 scale: 1.05,
@@ -34,7 +33,6 @@ function registerInput() {
         });
         //register animations when mouse leaves input
         input.addEventListener('mouseleave', (e) => {
-            console.log("mouse left")
             anime({
                 targets: `#${e.target.id}`,
                 scale: 1,
